@@ -33,7 +33,7 @@ const Data = () => {
       const num = Number(value);
 
       axios.get(APILINK).then(resp =>
-        setData([...data.filter(datum => (Number(datum.userId) === num || Number(datum.id) === num))])
+        setData([...resp.data.filter(datum => (Number(datum.userId) === num || Number(datum.id) === num))])
       );
     }
   };
