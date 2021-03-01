@@ -82,9 +82,10 @@ const Data = () => {
         <table className="table">
           <thead>
             <tr>
-              <td>id</td>
-              <td>title</td>
-              <td>body</td>
+              <td>User ID</td>
+              <td>Post ID</td>
+              <td>Title</td>
+              <td>Body</td>
 
             </tr>
           </thead>
@@ -92,7 +93,10 @@ const Data = () => {
             {posts.map((post, i) => (
               <tr key={i}>
                 <td>
-                  {post.id}.
+                  {post.userId}
+                </td>
+                <td>
+                  {post.id}
                 </td>
                 <td>
                   {post.title}
